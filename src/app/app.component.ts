@@ -6,7 +6,6 @@ import { AuthService } from '@services/auth.service';
   selector: 'app-root', // eslint-disable-line
   imports: [RouterOutlet],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.scss',
 })
 export class AppComponent {
   authService = inject(AuthService);
