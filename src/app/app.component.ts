@@ -3,12 +3,12 @@ import { RouterOutlet } from '@angular/router';
 import { AuthService } from '@services/auth.service';
 
 @Component({
-  selector: 'ng-root',
+  selector: 'app-root', // eslint-disable-line
   imports: [RouterOutlet],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.scss'
+  styleUrl: './app.component.scss',
 })
 export class AppComponent {
-  authService = inject(AuthService)
+  authService = inject(AuthService);
   title = 'ng-pessoal-finance';
 }
